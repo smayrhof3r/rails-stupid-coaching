@@ -12,5 +12,6 @@ class QuestionsController < ApplicationController
     else
       @message = "I don't care, get dressed and go to work!"
     end
+    @question = params[:question]
   end
 end

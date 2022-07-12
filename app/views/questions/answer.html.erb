@@ -1,3 +1,11 @@
-  <h1 class = "m-3 text-primary">Answer</h1>
-  <p class = "mb-3 border-top border-bottom border-secondary text-secondary"><%=@message%></p>
-  <%=link_to 'Ask again!', ask_path%>
+    <div class="m-3 p-2 text-left border-grey">
+      <p class="mb-1 text-secondary"><%=@question%></p>
+      <footer class="m-1 blockquote-footer">You</footer>
+    </div>
+    <div class="m-3 p-2 text-left border-grey background-yellow">
+      <p class="mb-1"><%=@message%></p>
+      <footer class="m-1 blockquote-footer">Coach</footer>
+    </div>
+    <div class="m-3 text-center">
+      <%=link_to 'Ask again!', ask_path%>
+    </div>
